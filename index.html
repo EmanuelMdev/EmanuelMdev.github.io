@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="paginas">
+        <a class="botao__home" href="index.html">HOME</a>
+        <a class="botao__bio" href="index2.html">BIO</a>
+    </div>
+    <div class="botao__temaescuro">
+        <img src="lua.png" class="lua">
+        <img src="sol.png" class="sol">
+        <div class="ball"></div>
+    </div>
+    <script>
+        document.querySelector('.ball').addEventListener('click', (e)=>{
+            e.target.classList.toggle('ball-move');
+            document.body.classList.toggle('light');
+        })
+    </script>
+    </header>
+    <main class="organizacao">
+        <section class="organizacao__conteudo"> 
+        <h1 class="h1__completo">Eleve seu negócio digital a outro nível
+            <strong class="titulo-destaque">com um <span class="palavra-destacada-pd1">Front-end</span> de qualidade!</strong></h1>
+            <p class="paragrafo__completo">Olá! Sou Emanuel Isaac, desenvolvedor Front-end com
+             especialidade em <strong><span class="pd2">Java Script</span>, <span class="pd3">HTML</span> e <span class="pd4">CSS</span></strong>. Ajudo pequenos
+             negócios e designers a colocarem em prática boas ideias.
+             Vamos conversar?</p>
+             <div class="organizacao__links">
+             <h2 class="h2__completo">Entre em contato!</h2>
+            <a class="organizacao__botao1"  href="https://www.instagram.com/___emanuel_isaac___/">
+                Instagram
+            </a>
+            <a class="organizacao__botao2"  href="https://github.com/EmanuelMdev">GitHub</a>
+            <a class="organizacao__botao3"  href="https://www.linkedin.com/in/emanuelmdev/">Linkedin</a>
+        </div>
+        </section>
+        <img src="foto.png" class="foto">
+</body>
+</html>

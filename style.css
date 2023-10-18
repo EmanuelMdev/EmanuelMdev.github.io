@@ -1,0 +1,301 @@
+* {
+    margin: 0;  /*removendo a margem e a distancia de padding geral da pagina*/
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;600&display=swap');
+
+
+.organizacao {
+    margin: 3% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.organizacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, black, #666565);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat; /* Impede a repetição da imagem de plano de fundo */
+    background-attachment: fixed; /* Fixa o plano de fundo para evitar rolagem */
+    transition: background 1s;
+}
+
+
+.titulo-destaque {
+    color: #F3612E;
+}
+
+.pd2 {
+color: yellow;
+}
+
+.pd3 {
+color: #F3612E;
+}
+
+.pd4 {
+color: #22D4FD;
+}
+
+.foto{
+width: 400px;
+}
+
+.h1__completo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.paragrafo__completo {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.organizacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.organizacao__botao1 {
+background-color: none;
+color: white;
+width: 280px;
+text-align: center;
+border-radius: 16px;
+font-size: 20px;
+padding: 21.5px 0;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+margin: 1%;
+border: 2px solid #F3612E;
+}
+
+.organizacao__botao2 {
+background-color: none;
+color: white;
+width: 280px;
+text-align: center;
+border-radius: 16px;
+font-size: 20px;
+padding: 21.5px 0;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+border: 2px solid #F3612E;
+}
+
+.organizacao__botao3 {
+background-color: none;
+color: white;
+width: 280px;
+text-align: center;
+border-radius: 16px;
+font-size: 20px;
+padding: 21.5px 0;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+margin: 1%;
+border: 2px solid #F3612E;
+}
+
+.organizacao__botao1:hover {
+    background-color: #333232;
+    border-color: #F3612E;
+}
+
+.organizacao__botao2:hover {
+    background-color: #333232;
+    border-color: #F3612E;
+}
+.organizacao__botao3:hover {
+    background-color: #333232;
+    border-color: #F3612E;
+}
+
+.h2__completo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.paginas {
+    flex-direction: row;
+    width: 615px;
+    text-align: center;
+    margin: 1% 0%;
+}
+
+.botao__home {
+    background-color: none;
+    color: white;
+    width: 0px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao__bio {
+    background-color: none;
+    color: white;
+    width: 0px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 12%;
+}
+
+.botao__home:hover {
+    color: #F3612E;
+}
+
+.botao__bio:hover {
+    color: #F3612E;
+}
+
+.header {
+    border: 1px solid rgb(10, 10, 10);
+    border-color: none;
+    height: 57px;
+    background-image: linear-gradient(to right, rgb(10, 10, 10), #5c5b5b);
+    border-radius: 2px;
+    border-width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .organizacao {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px
+    }
+}
+
+.botao__temaescuro {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 black;
+    cursor: pointer;
+    background-color: #757272;
+    margin: 10px;
+}
+
+.ball {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #617FAA;
+    transition: right 1s;
+}
+
+.ball-move {
+right: calc(100% - 40px)
+}
+
+.light {
+    background-image: linear-gradient(to right, #b4a8a8, #ededed);
+    color: black;
+}
+.light .header {
+    border-color: grey;
+    background-image: linear-gradient(to right, #b4a8a8, #ededed);
+}
+
+.light .ball {
+    background-color: #FFD86F;
+    border-color: black;
+}
+
+.light .botao__temaescuro {
+    background-color: #c9c6c6;
+    border-color: black;
+}
+
+.light .botao__home {
+    color: black;
+}
+
+.light .botao__bio {
+    color: black;
+}
+
+.light .organizacao__botao1 {
+    color: black;
+    border-color: #6584b1;
+}
+
+.light .organizacao__botao2 {
+    color: black;
+    border-color: #6584b1;
+}
+
+.light .organizacao__botao3 {
+    color: black;
+    border-color: #6584b1;
+}
+
+.light .organizacao__botao1:hover {
+    background-color: #818080;
+}
+
+.light .organizacao__botao2:hover {
+    background-color: #818080;
+}
+
+.light .organizacao__botao3:hover {
+    background-color: #818080;
+}
+
+.light .titulo-destaque {
+    color: #6584b1;
+}
+
+.light .botao__home:hover {
+    color: #6584b1;
+}
+
+.light .botao__bio:hover {
+    color: #6584b1;
+}
+
+.lua {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+}
+
+.sol {
+    position: absolute;
+    top: 0;
+    height: 39.4px;
+}
+
+.M {
+    height: 40px;
+}

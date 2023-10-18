@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+    <div class="paginas">
+        <a class="botao__home" href="index.html">HOME</a>
+        <a class="botao__bio" href="index2.html">BIO</a>
+    </div>
+    <div class="botao__temaescuro">
+        <img src="lua.png" class="lua">
+        <img src="sol.png" class="sol">
+        <div class="ball"></div>
+    </div>
+    <script>
+        document.querySelector('.ball').addEventListener('click', (e)=>{
+            e.target.classList.toggle('ball-move');
+            document.body.classList.toggle('light');
+        })
+    </script>
+        </header>
+    <main class="organizacao">
+        <section class="organizacao__conteudo">
+        <div class="organizacao__textos"> 
+        <h1 class="h1__completo">SOBRE <strong class="titulo-destaque">MIM</strong>...</h1>
+        <div class="organizacao__p">
+            <p class="p1">Olá, meu nome é Emanuel Isaac Moura Martins, e sou um desenvolvedor Front-End apaixonado por transformar ideias criativas em experiências digitais incríveis. Minha jornada na programação começou enquanto eu cursava a graduação em Sistemas de Informação, e desde então, nunca mais olhei para trás.</p>
+            <p class="p2">Sou especialista em <span class="pd1">Java Script</span>, <span class="pd2">HTML</span> e <span class="pd3">CSS</span>, adoro desafios que envolvem a criação de interfaces de usuário elegantes e funcionais. Acredito que a tecnologia é uma ferramenta poderosa para melhorar a forma como as pessoas interagem com o mundo digital, e estou empenhado em tornar essa interação o mais agradável e eficaz possível.</p>
+            <p class="p3">Uma das coisas que mais me motiva é ajudar pequenos negócios a prosperar. Entendo a importância da primeira impressão e, por isso, me dedico a dar uma nova vida a essas empresas, reformulando suas marcas para torná-las mais atraentes e, o mais importante, ajudá-las a vender mais. Acredito firmemente no profissionalismo e na responsabilidade em cada projeto que abraço.</p>
+        </div>
+        </section>
+        <img src="foto.png" class="foto">
+</body>
+</html>
